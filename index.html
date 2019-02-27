@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TAX</title>
+
+  </head>
+  <body>
+  <script>
+   var income1 = +prompt("Enter your income")
+   if (income1 <0) {
+     alert (" введите правильную сумму")
+   }
+   else if (income1 >=0 ) {
+     var income = income1 - 12000
+   }
+   else {
+     alert (" введите корректно сумму цифрами")
+   }
+   
+   
+   if (income >= 0 && income < 9526) {
+   var tax = income*0.10
+   alert (tax +" эта сумма налога tax rate 10%")
+   }
+   
+   else if (income >= 9526 && income < 38701) {
+   var tax = 952.50+(income-9525)*0.12
+   alert (tax +" это сумма налога tax rate 12%")
+   }
+   
+   else if (income >= 38701 && income < 82501) {
+   var tax = (income - 38700)*0.22 + 4453.50
+   alert (tax +" это сумма налога tax rate 22%")
+   }
+   
+   else if (income >= 82501 && income < 157501) {
+   var tax = (income - 82500)*0.24 + 14089.50
+   alert (tax +" это сумма налога tax rate 24%")
+   }
+   
+   else if (income >= 157501 && income < 200001) {
+   var tax = (income - 157500)*0.32 + 32089.50
+   alert (tax +" это сумма налога tax rate 32%")
+   }
+   
+   else if (income >= 200001 && income < 500001) {
+   var tax = (income - 200000)*0.35 + 45689.50
+   alert (tax +" это сумма налога tax rate 35%")
+   }
+   
+   else if (income >= 500001) {
+   var tax = (income - 500000)*0.37 + 150689.50
+   alert (tax +" это сумма налога tax rate 37%")
+   }
+   
+   else if (income <0){
+   alert (" Вы не оплачиваете налоги, учитывая Ваш доход")
+   }
+   
+   
+</script>
+  </body>
+</html>
